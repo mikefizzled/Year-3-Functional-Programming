@@ -43,13 +43,13 @@ Alternatively, if using Calva, you can load the namespace and run the main funct
 
 Each module call can be enabled or disabled by commenting or uncommenting the relevant function calls inside `core.clj`.
 
-Examples of how the functions can be invoked within `core.clj`:
+Examples of how the functions can be called from `core.clj`:
 
 - **Palindrome Generator** — `(palindrome-main 10000 10)`  
   Generates the first 10 palindromes smaller than 10,000.
 
 - **Number Reader** — `(number-reader-main 123456789)`  
-  Converts the number 123,456,789 to “one hundred and twenty-three million four hundred and fifty-six thousand seven hundred and eighty-nine”.
+  Converts the number 123456789 to “one hundred and twenty-three million four hundred and fifty-six thousand seven hundred and eighty-nine”.
 
 - **Morse Code Translator** — `(morse-code-main "encode" "Inspector Morse")`  
   or `(morse-code-main "decode" "-- --- .-. ... .")`  
