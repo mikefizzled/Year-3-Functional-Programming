@@ -1,10 +1,8 @@
 # Final Year – Functional Programming - Clojure
 
 This project was developed as part of a final-year functional programming module.  
-It demonstrates three independent Clojure programs, each solving a distinct problem using functional and declarative techniques.  
-All three are orchestrated via a single entry point (`core.clj`).
-
----
+It demonstrates three independent Clojure programs, each solving a distinct problem using functional techniques.  
+All three programs are accessible via a single entry point (`core.clj`).
 
 ## Overview
 
@@ -15,9 +13,6 @@ All three are orchestrated via a single entry point (`core.clj`).
 | **Number Reader** | Converts integer values (up to 999,999,999) into English words. |
 | **Morse Code Translator** | Encodes ASCII text into Morse code and decodes Morse code back into text. |
 
-Each program defines its own namespace, input validation, and test suite, using `clojure.spec` for argument verification and `clojure.test` for correctness checking.
-
----
 
 ## Project Structure
 
@@ -30,11 +25,8 @@ Each program defines its own namespace, input validation, and test suite, using 
 | `test/clojureprogs/...` | Unit tests for each module. |
 | `project.clj` | Leiningen configuration and metadata. |
 
----
-
 ## Usage
 
-The program can be executed using the main namespace defined in `core.clj`.  
 You can run the project directly from the terminal with:
 
 `lein run`
@@ -55,12 +47,10 @@ Examples of how the functions can be called from `core.clj`:
   or `(morse-code-main "decode" "-- --- .-. ... .")`  
   Encodes and decodes Morse code respectively.
 
----
-
 ## Testing
 
 Each namespace includes corresponding unit tests located in the `test/` directory.  
-These tests cover expected input/output behaviour and exception handling, as well as integration between encoding/decoding or number conversion functions.
+These tests cover expected input/output behaviour and exception handling.
 
 To run the test suite, execute:
 
@@ -68,9 +58,9 @@ To run the test suite, execute:
 
 This will automatically instrument all functions defined with `clojure.spec`, ensuring that input and output specifications are verified during test execution.
 
----
-
 ## Development Notes
+
+- First coursework written in a functional programming langauge
 
 - Written in Clojure 1.11.1
 
